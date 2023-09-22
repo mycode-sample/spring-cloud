@@ -13,9 +13,9 @@
   <!--协以及端口-->
   <dubbo:protocol name="dubbo" port="8000"/>
   <!--服务对外提供的接口-->
-  <dubbo:service interface="com.wrotecode.spring.springcloud.userservice.UserApi"
+  <dubbo:service interface="com.wrotecode.spring.springcloud.cp4.userservice.UserApi"
       ref="userService"/>
   <!--spring中的bean-->
   <bean id="userService"
-      class="com.wrotecode.spring.springcloud.userservice.UserProvider"/>
+      class="com.wrotecode.spring.springcloud.cp4.userservice.UserProvider"/>
 </beans>

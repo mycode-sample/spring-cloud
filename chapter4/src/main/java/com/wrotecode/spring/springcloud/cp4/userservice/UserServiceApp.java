@@ -1,4 +1,4 @@
-package com.wrotecode.spring.springcloud.userservice;
+package com.wrotecode.spring.springcloud.cp4.userservice;
 
 import org.springframework.context.support.GenericXmlApplicationContext;
 

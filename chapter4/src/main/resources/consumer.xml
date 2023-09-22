@@ -12,6 +12,6 @@
   <dubbo:registry address="N/A"/>
   <!--依赖的服务，可以从spring上下文中获取服务，然后调用其中方法-->
   <dubbo:reference id="orderService"
-      interface="com.wrotecode.spring.springcloud.userservice.UserApi"
-      url="dubbo://192.168.93.1:8000/com.wrotecode.spring.springcloud.userservice.UserApi"/>
+      interface="com.wrotecode.spring.springcloud.cp4.userservice.UserApi"
+      url="dubbo://localhost:8000/com.wrotecode.spring.springcloud.cp4.userservice.UserApi"/>
 </beans>

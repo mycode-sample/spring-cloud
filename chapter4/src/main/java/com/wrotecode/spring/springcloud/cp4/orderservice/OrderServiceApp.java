@@ -1,6 +1,6 @@
-package com.wrotecode.spring.springcloud.orderservice;
+package com.wrotecode.spring.springcloud.cp4.orderservice;
 
-import com.wrotecode.spring.springcloud.userservice.UserApi;
+import com.wrotecode.spring.springcloud.cp4.userservice.UserApi;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
 import java.util.Date;

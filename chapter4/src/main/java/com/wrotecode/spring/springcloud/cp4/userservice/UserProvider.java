@@ -1,4 +1,4 @@
-package com.wrotecode.spring.springcloud.userservice;
+package com.wrotecode.spring.springcloud.cp4.userservice;
 
 public class UserProvider implements UserApi {
     @Override
