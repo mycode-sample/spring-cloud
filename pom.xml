@@ -17,6 +17,8 @@
   <packaging>pom</packaging>
   <modules>
     <module>chapter4</module>
+    <module>chapter4/springboot-user-service</module>
+    <module>chapter4/springboot-order-service</module>
   </modules>
 
   <properties>
@@ -41,6 +43,12 @@
       <artifactId>spring-boot-starter-test</artifactId>
     </dependency>
 
+    <!-- dubbo starter -->
+    <dependency>
+      <groupId>org.apache.dubbo</groupId>
+      <artifactId>dubbo-spring-boot-starter</artifactId>
+      <version>2.7.5</version>
+    </dependency>
   </dependencies>
 
 
