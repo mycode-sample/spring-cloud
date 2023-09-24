@@ -9,7 +9,7 @@
   <!--服务提供方信息，用于计算依赖关系-->
   <dubbo:application name="user-service"/>
   <!--注册中心，可以使用nacos或者zookeeper，也可以不使用注册中心，此时配置是N/A-->
-  <dubbo:registry address="N/A"/>
+  <dubbo:registry address="zookeeper://localhost:2181"/>
   <!--协以及端口-->
   <dubbo:protocol name="dubbo" port="8000"/>
   <!--服务对外提供的接口-->

@@ -9,7 +9,7 @@
   <!--应用名称，用来计算依赖关系-->
   <dubbo:application name="order-service"/>
   <!--注册中心，可以使用nacos或者zookeeper，也可以不使用注册中心，此时配置是N/A-->
-  <dubbo:registry address="N/A"/>
+  <dubbo:registry address="zookeeper://localhost:2181"/>
   <!--依赖的服务，可以从spring上下文中获取服务，然后调用其中方法-->
   <dubbo:reference id="orderService"
       interface="com.wrotecode.spring.springcloud.cp4.userservice.UserApi"
