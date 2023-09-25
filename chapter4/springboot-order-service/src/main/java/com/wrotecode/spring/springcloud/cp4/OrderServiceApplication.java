@@ -9,7 +9,7 @@ import java.util.Date;
 
 @SpringBootApplication
 public class OrderServiceApplication {
-    @Reference(url = "dubbo://192.168.93.1:8000/com.wrotecode.spring.springcloud.cp4.UserService")
+    @Reference
     private UserService service;
 
     public static void main(String[] args) throws Exception {
