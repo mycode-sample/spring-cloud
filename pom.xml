@@ -27,6 +27,13 @@
     <maven.compiler.source>8</maven.compiler.source>
     <maven.compiler.target>8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    <version.dubbo-starter>2.7.5</version.dubbo-starter>
+    <version.zookeeper>3.5.3-beta</version.zookeeper>
+    <version.curator>4.0.1</version.curator>
+    <version.spring-cloud-dependencies>Greenwich.SR2</version.spring-cloud-dependencies>
+    <version.spring-boot-dependencies>2.1.11.RELEASE</version.spring-boot-dependencies>
+    <version.spring-cloud-alibaba-dependencies>2.1.1.RELEASE</version.spring-cloud-alibaba-dependencies>
   </properties>
 
   <dependencies>
@@ -56,45 +63,45 @@
       <dependency>
         <groupId>org.apache.dubbo</groupId>
         <artifactId>dubbo-spring-boot-starter</artifactId>
-        <version>2.7.5</version>
+        <version>${version.dubbo-starter}</version>
       </dependency>
 
       <!--zookeeper start-->
       <dependency>
         <groupId>org.apache.zookeeper</groupId>
         <artifactId>zookeeper</artifactId>
-        <version>3.5.3-beta</version>
+        <version>${version.zookeeper}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.curator</groupId>
         <artifactId>curator-framework</artifactId>
-        <version>4.0.1</version>
+        <version>${version.curator}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.curator</groupId>
         <artifactId>curator-recipes</artifactId>
-        <version>4.0.1</version>
+        <version>${version.curator}</version>
       </dependency>
       <!--zookeeper end-->
 
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-dependencies</artifactId>
-        <version>Greenwich.SR2</version>
+        <version>${version.spring-cloud-dependencies}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
-        <version>2.1.11.RELEASE</version>
+        <version>${version.spring-boot-dependencies}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>com.alibaba.cloud</groupId>
         <artifactId>spring-cloud-alibaba-dependencies</artifactId>
-        <version>2.1.1.RELEASE</version>
+        <version>${version.spring-cloud-alibaba-dependencies}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
