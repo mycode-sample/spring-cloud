@@ -1,5 +1,6 @@
-package com.wrotecode.spring.springcloud.cp4;
+package com.wrotecode.spring.springcloud.cp4.consumer;
 
+import com.wrotecode.spring.springcloud.cp4.service.UserService;
 import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,7 +10,8 @@ import java.util.Date;
 
 @SpringBootApplication
 public class OrderServiceApplication {
-    @Reference
+    @Reference(cluster = "failfast",
+            mock = "com.wrotecode.spring.springcloud.cp4.service.DefaultUserServiceImpl")
     private UserService service;
 
     public static void main(String[] args) throws Exception {

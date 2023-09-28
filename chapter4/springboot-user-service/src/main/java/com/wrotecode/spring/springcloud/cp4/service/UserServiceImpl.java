@@ -1,4 +1,4 @@
-package com.wrotecode.spring.springcloud.cp4;
+package com.wrotecode.spring.springcloud.cp4.service;
 
 import org.apache.dubbo.config.annotation.Service;
 

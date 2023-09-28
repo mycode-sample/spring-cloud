@@ -1,5 +1,6 @@
 package com.wrotecode.spring.springcloud.cp4.sc6;
 
+import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
