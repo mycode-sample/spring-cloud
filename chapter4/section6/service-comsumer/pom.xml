@@ -10,6 +10,7 @@
     <relativePath>../../../pom.xml</relativePath>
   </parent>
 
+  <groupId>com.wrotecode.spring.springcloud.chapter4.section6</groupId>
   <artifactId>service-comsumer</artifactId>
 
   <properties>
