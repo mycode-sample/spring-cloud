@@ -20,6 +20,7 @@
     <module>chapter4/springboot-user-service</module>
     <module>chapter4/springboot-order-service</module>
     <module>chapter4/section6/service-api</module>
+    <module>chapter4/section6/service-comsumer</module>
     <module>chapter4/section6/service-provider</module>
   </modules>
 
