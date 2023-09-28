@@ -12,6 +12,7 @@
   <dubbo:registry address="zookeeper://localhost:2181"/>
   <!--依赖的服务，可以从spring上下文中获取服务，然后调用其中方法-->
   <dubbo:reference id="orderService"
-      interface="com.wrotecode.spring.springcloud.cp4.userservice.UserApi"
-      />
+      mock="com.wrotecode.spring.springcloud.cp4.userservice.DefaultUserProvider"
+      cluster="failfast"
+      interface="com.wrotecode.spring.springcloud.cp4.userservice.UserApi"/>
 </beans>
