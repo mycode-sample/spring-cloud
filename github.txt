@@ -1,0 +1,4 @@
+http://github.com/mycode-sample/spring-cloud/compare/revision1..revision2?diff=split
+http://github.com/mycode-sample/spring-cloud/commit/revision?diff=split
+http://github.com/mycode-sample/spring-cloud/tree/revision
+http://github.com/mycode-sample/spring-cloud/blob/branch
