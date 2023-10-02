@@ -22,6 +22,8 @@
     <module>chapter4/section6/service-api</module>
     <module>chapter4/section6/service-comsumer</module>
     <module>chapter4/section6/service-provider</module>
+    <module>chapter5</module>
+    <module>chapter5/section2/nacos-springboot</module>
   </modules>
 
   <properties>
