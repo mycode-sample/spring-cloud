@@ -24,6 +24,8 @@
     <module>chapter4/section6/service-provider</module>
     <module>chapter5</module>
     <module>chapter5/section2/nacos-springboot</module>
+    <module>chapter5/section2/nacosv2-springboot</module>
+    <module>chapter5/section4/dubbo-nacos</module>
   </modules>
 
   <properties>
@@ -104,6 +106,14 @@
         <version>${version.curator}</version>
       </dependency>
       <!--zookeeper end-->
+
+      <!-- nacos start-->
+      <dependency>
+        <groupId>com.alibaba.boot</groupId>
+        <artifactId>nacos-discovery-spring-boot-starter</artifactId>
+        <version>0.2.4</version>
+      </dependency>
+      <!-- nacos end-->
 
       <!--eureka start-->
       <dependency>
