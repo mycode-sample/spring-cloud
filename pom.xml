@@ -27,6 +27,8 @@
     <module>chapter5/section2/nacosv2-springboot</module>
     <module>chapter5/section4/dubbo-nacos</module>
     <module>chapter5/section5/dubbo-cloud-nacos</module>
+    <module>chapter5/section5/dubbo-cloud-nacos-consumer</module>
+    <module>chapter5/section5/dubbo-cloud-nacos-api</module>
   </modules>
 
   <properties>
