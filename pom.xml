@@ -26,6 +26,7 @@
     <module>chapter5/section2/nacos-springboot</module>
     <module>chapter5/section2/nacosv2-springboot</module>
     <module>chapter5/section4/dubbo-nacos</module>
+    <module>chapter5/section5/dubbo-cloud-nacos</module>
   </modules>
 
   <properties>
@@ -112,6 +113,11 @@
         <groupId>com.alibaba.boot</groupId>
         <artifactId>nacos-discovery-spring-boot-starter</artifactId>
         <version>0.2.4</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-alibaba-nacos-discovery</artifactId>
+        <version>0.2.2.RELEASE</version>
       </dependency>
       <!-- nacos end-->
 
