@@ -5,7 +5,6 @@ import com.alibaba.nacos.spring.context.annotation.config.NacosPropertySource;
 import org.springframework.stereotype.Component;
 
 @Component
-@NacosPropertySource(dataId = "dataSource", autoRefreshed = true)
 public class SimpleNacosConfigDemo {
 
     @NacosValue(value = "${url:defaultUrl}", autoRefreshed = true)
@@ -18,6 +17,6 @@ public class SimpleNacosConfigDemo {
     private String password;
 
     public void printConfig() {
-        System.out.printf("--->数据库连接:$s\n驱动:$s\n用户名: %s\n密码: %s\n", url, driver, username, password);
+        System.out.printf("--->数据库连接:%s\n驱动:%s\n用户名: %s\n密码: %s\n", url, driver, username, password);
     }
 }
