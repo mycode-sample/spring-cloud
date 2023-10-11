@@ -29,6 +29,7 @@
     <module>chapter5/section5/dubbo-cloud-nacos</module>
     <module>chapter5/section5/dubbo-cloud-nacos-consumer</module>
     <module>chapter5/section5/dubbo-cloud-nacos-api</module>
+    <module>chapter6</module>
   </modules>
 
   <properties>
@@ -45,6 +46,7 @@
     <version.eureka>2.1.2.RELEASE</version.eureka>
     <version.cloud-dubbo-starter>0.9.0.RELEASE</version.cloud-dubbo-starter>
     <version.context-support>1.0.5</version.context-support>
+    <version.nacos-config>0.2.7</version.nacos-config>
   </properties>
 
   <dependencies>
@@ -121,6 +123,11 @@
         <artifactId>spring-cloud-alibaba-nacos-discovery</artifactId>
         <version>0.2.2.RELEASE</version>
       </dependency>
+      <dependency>
+        <groupId>com.alibaba.boot</groupId>
+        <artifactId>nacos-config-spring-boot-starter</artifactId>
+        <version>${version.nacos-config}</version>
+      </dependency>
       <!-- nacos end-->
 
       <!--eureka start-->
@@ -130,6 +137,14 @@
         <version>${version.eureka}</version>
       </dependency>
       <!--eureka end-->
+
+      <!--spring start-->
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-context</artifactId>
+        <version>2.1.1.RELEASE</version>
+      </dependency>
+      <!--spring end-->
 
       <!--pom start-->
       <dependency>
