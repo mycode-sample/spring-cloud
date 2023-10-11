@@ -4,15 +4,20 @@ import com.alibaba.nacos.api.config.annotation.NacosValue;
 import com.alibaba.nacos.spring.context.annotation.config.NacosPropertySource;
 import org.springframework.stereotype.Component;
 
-import java.util.Date;
-
 @Component
-@NacosPropertySource(dataId = "nacos-config-demo", autoRefreshed = true)
+@NacosPropertySource(dataId = "dataSource", autoRefreshed = true)
 public class SimpleNacosConfigDemo {
-    @NacosValue(value = "${info:hello,world}", autoRefreshed = true)
-    private String info;
+
+    @NacosValue(value = "${url:defaultUrl}", autoRefreshed = true)
+    private String url;
+    @NacosValue(value = "${driver:defaultDriver}", autoRefreshed = true)
+    private String driver;
+    @NacosValue(value = "${username:defaultUserName}", autoRefreshed = true)
+    private String username;
+    @NacosValue(value = "${password:123456}", autoRefreshed = true)
+    private String password;
 
     public void printConfig() {
-        System.out.printf("%s -> %s%n", new Date(), info);
+        System.out.printf("--->数据库连接:$s\n驱动:$s\n用户名: %s\n密码: %s\n", url, driver, username, password);
     }
 }

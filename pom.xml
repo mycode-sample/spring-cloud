@@ -47,6 +47,7 @@
     <version.cloud-dubbo-starter>0.9.0.RELEASE</version.cloud-dubbo-starter>
     <version.context-support>1.0.5</version.context-support>
     <version.nacos-config>0.2.7</version.nacos-config>
+    <version.cloud-nacos-config>2.1.1.RELEASE</version.cloud-nacos-config>
   </properties>
 
   <dependencies>
@@ -127,6 +128,11 @@
         <groupId>com.alibaba.boot</groupId>
         <artifactId>nacos-config-spring-boot-starter</artifactId>
         <version>${version.nacos-config}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.alibaba.cloud</groupId>
+        <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        <version>${version.cloud-nacos-config}</version>
       </dependency>
       <!-- nacos end-->
 
