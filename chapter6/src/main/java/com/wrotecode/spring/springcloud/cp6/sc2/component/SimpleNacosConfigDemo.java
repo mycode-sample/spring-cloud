@@ -4,6 +4,8 @@ import com.alibaba.nacos.api.config.annotation.NacosValue;
 import com.alibaba.nacos.spring.context.annotation.config.NacosPropertySource;
 import org.springframework.stereotype.Component;
 
+import java.util.Date;
+
 @Component
 @NacosPropertySource(dataId = "nacos-config-demo", autoRefreshed = true)
 public class SimpleNacosConfigDemo {
@@ -11,6 +13,6 @@ public class SimpleNacosConfigDemo {
     private String info;
 
     public void printConfig() {
-        System.out.println(info);
+        System.out.printf("%s -> %s%n", new Date(), info);
     }
 }
