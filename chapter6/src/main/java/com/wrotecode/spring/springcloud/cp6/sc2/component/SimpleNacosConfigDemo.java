@@ -23,7 +23,7 @@ public class SimpleNacosConfigDemo implements InitializingBean, ApplicationConte
     private String password;
 
     public void printConfig() {
-        System.out.println("--->获取上下文环境:");
+        System.out.println("--->获取上下文环境SimpleNacosConfigDemo:");
         Environment environment = applicationContext.getEnvironment();
         for (String key : keys) {
             System.out.printf("%s -> %s\n", key, environment.getProperty(key));
