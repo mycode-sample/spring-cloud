@@ -12,7 +12,6 @@ public class NacosConfigApplication {
         SimpleNacosConfigDemo demo = context.getBean(SimpleNacosConfigDemo.class);
         while (true) {
             demo.printConfig();
-            System.out.println(context.getEnvironment().getProperty("driver"));
             Thread.sleep(1000);
         }
     }
