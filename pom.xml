@@ -153,6 +153,14 @@
       </dependency>
       <!--spring end-->
 
+      <!--sentinel start-->
+      <dependency>
+        <groupId>com.alibaba.csp</groupId>
+        <artifactId>sentinel-core</artifactId>
+        <version>1.8.6</version>
+      </dependency>
+      <!--sentinel end-->
+
       <!--pom start-->
       <dependency>
         <groupId>org.springframework.cloud</groupId>
