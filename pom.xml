@@ -30,6 +30,7 @@
     <module>chapter5/section5/dubbo-cloud-nacos-consumer</module>
     <module>chapter5/section5/dubbo-cloud-nacos-api</module>
     <module>chapter6</module>
+    <module>chapter7</module>
   </modules>
 
   <properties>
