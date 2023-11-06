@@ -36,11 +36,13 @@ public class WorkExecutor implements Runnable {
         }
     }
 
-    public void setMinSleep(int minSleep) {
+    public WorkExecutor setMinSleep(int minSleep) {
         this.minSleep = minSleep;
+        return this;
     }
 
-    public void setMaxSleep(int maxSleep) {
+    public WorkExecutor setMaxSleep(int maxSleep) {
         this.maxSleep = maxSleep;
+        return this;
     }
 }

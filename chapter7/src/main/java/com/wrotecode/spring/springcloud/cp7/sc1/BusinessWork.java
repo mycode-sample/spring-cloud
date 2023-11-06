@@ -76,7 +76,7 @@ public class BusinessWork {
         e.printStackTrace();
     }
 
-    @SentinelResource(value = "work4", blockHandler = "handleBlockException", blockHandlerClass = BlockHandler.class)
+    @SentinelResource(value = "work4", blockHandler = "handleBlockException", blockHandlerClass = {BlockHandler.class})
     public void work4() {
         System.out.println("work4 -> 开始执行业务");
     }

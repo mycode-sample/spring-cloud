@@ -6,9 +6,9 @@ public class SentinelDemo {
         t1.start();
         Thread t2 = new Thread(new WorkExecutor("work2"));
         t2.start();
-        Thread t3 = new Thread(new WorkExecutor("work3"));
+        Thread t3 = new Thread(new WorkExecutor("work3").setMinSleep(10).setMaxSleep(100));
         t3.start();
-        Thread t4 = new Thread(new WorkExecutor("work4"));
+        Thread t4 = new Thread(new WorkExecutor("work4").setMinSleep(10).setMaxSleep(100));
         t4.start();
     }
 }
