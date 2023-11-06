@@ -8,8 +8,9 @@ public class SentinelDemo {
         Random random = new Random();
         while (true) {
             work.doWork();
+            work.work2();
             long t = random.nextInt(1000);
-            while (t < 500) {
+            while (t < 200) {
                 t = random.nextInt(1000);
             }
             System.out.println("t ->" + t);
