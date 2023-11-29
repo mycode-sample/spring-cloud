@@ -4,6 +4,7 @@ import com.alibaba.csp.sentinel.Entry;
 import com.alibaba.csp.sentinel.SphU;
 import com.alibaba.csp.sentinel.slots.block.RuleConstant;
 import com.alibaba.csp.sentinel.slots.block.degrade.DegradeRule;
+import com.alibaba.csp.sentinel.slots.block.degrade.DegradeRuleManager;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -14,12 +15,13 @@ public class DegradeBusinessWork {
     public void init() {
         DegradeRule rule = new DegradeRule();
         rule.setResource("work");
-        rule.setCount(10);
+        rule.setCount(1);
         rule.setGrade(RuleConstant.DEGRADE_GRADE_RT);
         rule.setTimeWindow(10);
-        rule.setMinRequestAmount(5);
+        rule.setMinRequestAmount(1);
         List<DegradeRule> list = new ArrayList<>();
         list.add(rule);
+        DegradeRuleManager.loadRules(list);
     }
 
     public void work() {
